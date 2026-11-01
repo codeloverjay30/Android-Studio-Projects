@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerBindingExample</string>
+    <string name="multiple_list">Multiple List</string>
+    <string name="add_item">ADD ITEM</string>
+    <string name="parent">parent</string>
+    <string name="child">child</string>
+</resources>

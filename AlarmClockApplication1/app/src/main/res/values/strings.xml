@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlarmClockApplication1</string>
+    <string name="add_an_alarm">Add an alarm</string>
+    <string name="alarm_awake_notify">The alarm will awake</string>
+</resources>

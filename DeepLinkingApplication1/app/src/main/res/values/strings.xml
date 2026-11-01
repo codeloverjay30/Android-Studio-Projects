@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DeepLinkingApplication1</string>
+    <string name="title_gizmos">gizmos</string>
+    <string name="filter_view_http_gizmos">filter view http gizmos</string>
+</resources>

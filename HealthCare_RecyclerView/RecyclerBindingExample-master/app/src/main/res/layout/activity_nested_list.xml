@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="parentList"
+            type="java.util.List"/>
+
+        <variable
+            name="onItemClickListener"
+            type="com.ks.recyclerbindingexample.callbacks.OnItemClickListener"/>
+
+        <variable
+            name="activity"
+            type="com.ks.recyclerbindingexample.nestedListExample.NestedListActivity"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity::openMultipleListActivity}"
+            android:text="@string/multiple_list"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity::addAnItem}"
+            android:text="@string/add_item"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/parent"
+            android:inputType="text"
+            android:hint="@string/parent"
+            android:id="@+id/parent"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/child"
+            android:inputType="text"
+            android:hint="@string/child"
+            android:id="@+id/child"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            rvItemLayout="@{@layout/row_parent}"
+            rvList="@{parentList}"
+            rvOnItemClick="@{onItemClickListener}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SQLDemo</string>
+    <string name="subject">subject</string>
+    <string name="sender">sender</string>
+    <string name="query">Query</string>
+    <string name="insert_one">insertOne</string>
+</resources>
